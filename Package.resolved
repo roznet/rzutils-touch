@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "FMDB",
+        "repositoryURL": "https://github.com/ccgus/fmdb",
+        "state": {
+          "branch": null,
+          "revision": "61e51fde7f7aab6554f30ab061cc588b28a97d04",
+          "version": "2.7.7"
+        }
+      },
+      {
+        "package": "RZUtils",
+        "repositoryURL": "https://github.com/roznet/rzutils",
+        "state": {
+          "branch": null,
+          "revision": "5c647ddf4a6431765e066e3cd08f00564ba9bc93",
+          "version": "1.0.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
