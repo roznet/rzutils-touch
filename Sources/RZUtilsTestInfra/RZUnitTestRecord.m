@@ -24,7 +24,7 @@
 //  
 
 #import "RZUnitTestRecord.h"
-@import RZUtilsCore;
+@import RZUtils;
 
 
 @implementation UnitTestRecordDetail

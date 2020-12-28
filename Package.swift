@@ -25,13 +25,13 @@ let package = Package(
             name: "RZUtilsTouch",
             dependencies: [
                 //"RZUtils"
-                .product(name: "RZUtilsCore", package: "RZUtils"),
+                .product(name: "RZUtils", package: "RZUtils"),
                 .product(name: "RZUtilsUniversal", package: "RZUtils")
             ]),
         .target(
             name: "RZUtilsTestInfra",
             dependencies: [
-                .product(name: "RZUtilsCore", package: "RZUtils"),
+                .product(name: "RZUtils", package: "RZUtils"),
                 "RZUtilsTouch",
             ]),
         .testTarget(

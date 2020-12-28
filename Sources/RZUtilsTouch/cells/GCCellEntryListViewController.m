@@ -26,7 +26,7 @@
 #import "GCCellEntryListViewController.h"
 #import "GCCellGrid.h"
 #import "RZViewConfig.h"
-@import RZUtilsCore;
+@import RZUtils;
 
 @interface GCCellEntryListViewController ()
 

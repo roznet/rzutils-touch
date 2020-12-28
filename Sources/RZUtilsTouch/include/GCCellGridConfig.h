@@ -25,7 +25,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-@import RZUtilsCore;
+@import RZUtils;
 
 typedef struct {
     BOOL flag;

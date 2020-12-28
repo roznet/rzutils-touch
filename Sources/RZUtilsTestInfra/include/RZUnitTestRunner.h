@@ -24,7 +24,7 @@
 //  
 
 #import <Foundation/Foundation.h>
-@import RZUtilsCore;
+@import RZUtils;
 #import "RZUnitTest.h"
 #import "RZUnitTestRecord.h"
 

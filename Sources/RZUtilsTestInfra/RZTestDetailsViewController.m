@@ -24,7 +24,7 @@
 //  
 
 #import "RZTestDetailsViewController.h"
-@import RZUtilsCore;
+@import RZUtils;
 @import WebKit;
 
 @implementation RZTestDetailsViewController

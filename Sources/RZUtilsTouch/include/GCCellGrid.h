@@ -25,7 +25,7 @@
 
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
-@import RZUtilsCore;
+@import RZUtils;
 #import "GCCellGridConfig.h"
 
 typedef NS_ENUM(NSUInteger, gcCellLayout){

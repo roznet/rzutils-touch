@@ -25,7 +25,7 @@
 
 #import <Foundation/Foundation.h>
 @import UIKit;
-@import RZUtilsCore;
+@import RZUtils;
 @import RZUtilsTouch;
 
 #import "RZUnitTest.h"

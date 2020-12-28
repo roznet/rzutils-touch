@@ -25,7 +25,7 @@
 
 #import "GCCellActivityIndicator.h"
 #import "RZViewConfig.h"
-@import RZUtilsCore;
+@import RZUtils;
 
 @interface GCCellActivityIndicator ()
 @property (nonatomic,assign) RZParentObject * parent;

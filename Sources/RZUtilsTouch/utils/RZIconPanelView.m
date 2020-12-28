@@ -24,7 +24,7 @@
 //  
 
 #import "RZIconPanelView.h"
-@import RZUtilsCore;
+@import RZUtils;
 #import "RZIconPanelItem.h"
 
 NSInteger kInvalidIdentifier = -1;

@@ -3,7 +3,7 @@
 //
 
 #import "UIImage+ImageWithUIView.h"
-@import RZUtilsCore;
+@import RZUtils;
 
 @implementation UIImage (ImageWithUIView)
 #pragma mark -

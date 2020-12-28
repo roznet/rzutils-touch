@@ -26,7 +26,7 @@
 #import "GCCellSimpleGraph.h"
 #import "GCSimpleGraphGestures.h"
 #import "GCSimpleGraphCachedDataSource.h"
-@import RZUtilsCore;
+@import RZUtils;
 #import "GCSimpleGraphLegendView.h"
 
 @interface GCCellSimpleGraph ()

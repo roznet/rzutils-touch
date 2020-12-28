@@ -24,7 +24,7 @@
 //  
 
 #import <UIKit/UIKit.h>
-@import RZUtilsCore;
+@import RZUtils;
 
 
 @interface GCCellActivityIndicator : UITableViewCell<RZChildObject>

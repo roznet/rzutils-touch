@@ -24,7 +24,7 @@
 //  
 
 #import "RZUnitTestTask.h"
-@import RZUtilsCore;
+@import RZUtils;
 
 @implementation RZUnitTestTask
 

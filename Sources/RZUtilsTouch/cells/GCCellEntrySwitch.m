@@ -25,7 +25,7 @@
 
 #import "GCCellEntrySwitch.h"
 #import "RZViewConfig.h"
-@import RZUtilsCore;
+@import RZUtils;
 
 @implementation GCCellEntrySwitch
 

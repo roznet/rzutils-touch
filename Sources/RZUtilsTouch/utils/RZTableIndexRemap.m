@@ -24,7 +24,7 @@
 //  
 
 #import "RZTableIndexRemap.h"
-@import RZUtilsCore;
+@import RZUtils;
 
 // For indexRemap
 #if TARGET_OS_IPHONE

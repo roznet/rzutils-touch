@@ -23,7 +23,7 @@
 //  SOFTWARE.
 //  
 
-@import RZUtilsCore;
+@import RZUtils;
 @import RZUtilsUniversal;
 #import "GCSimpleGraphGestures.h"
 

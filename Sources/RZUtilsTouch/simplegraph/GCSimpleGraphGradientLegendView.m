@@ -24,7 +24,7 @@
 //  
 
 @import RZUtilsUniversal;
-@import RZUtilsCore;
+@import RZUtils;
 #import "GCSimpleGraphGradientLegendView.h"
 #import "RZViewConfig.h"
 

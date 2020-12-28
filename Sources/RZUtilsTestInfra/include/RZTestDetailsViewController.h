@@ -26,7 +26,7 @@
 #import <UIKit/UIKit.h>
 #import "RZUnitTestRecord.h"
 #import "RZUnitTestRunner.h"
-@import RZUtilsCore;
+@import RZUtils;
 
 @interface RZTestDetailsViewController : UIViewController<RZChildObject,RZUnitTestSource>
 @property (retain,nonatomic)	RZUnitTestRecord*record;

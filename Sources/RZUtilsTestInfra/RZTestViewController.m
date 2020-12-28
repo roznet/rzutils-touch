@@ -25,7 +25,7 @@
 
 #import "RZTestViewController.h"
 #import "RZTestDetailsViewController.h"
-@import RZUtilsCore;
+@import RZUtils;
 @import RZUtilsTouch;
 
 @interface RZTestViewController ()

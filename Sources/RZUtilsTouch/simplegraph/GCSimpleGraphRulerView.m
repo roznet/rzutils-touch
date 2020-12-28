@@ -24,7 +24,7 @@
 //  
 
 @import RZUtilsUniversal;
-@import RZUtilsCore;
+@import RZUtils;
 #import "GCSimpleGraphRulerView.h"
 #import "RZViewConfig.h"
 

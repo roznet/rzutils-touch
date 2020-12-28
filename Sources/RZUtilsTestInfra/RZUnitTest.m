@@ -33,7 +33,7 @@
 
 #import "RZUnitTest.h"
 #import "RZUnitTestRecord.h"
-@import RZUtilsCore;
+@import RZUtils;
 
 @implementation RZUnitTest
 
