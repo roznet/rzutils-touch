@@ -55,6 +55,9 @@ NSString * kRZUnitTestNewResults = @"kRZUnitTestNewResults";
     [_testQueue release];
     [_collectedResults release];
     [_testSource release];
+    [_preRun release];
+    [_postRun release];
+    
     [super dealloc];
 }
 #endif
@@ -80,7 +83,6 @@ NSString * kRZUnitTestNewResults = @"kRZUnitTestNewResults";
             test.delegate = self;
             NSArray * defs = [test testDefinitions];
             for (NSDictionary * def in defs) {
-
                 RZUnitTestTask * task = [RZUnitTestTask taskWith:test and:def];
                 [queue addObject:task];
             }
@@ -109,6 +111,10 @@ NSString * kRZUnitTestNewResults = @"kRZUnitTestNewResults";
 
     if (firstWaiting && ! running) {
         firstWaiting.status = utTaskRunning;
+        // Do preRun Test on firstWaitin.unitTest, def
+        if( self.preRun){
+            self.preRun(firstWaiting.unitTest,firstWaiting.def);
+        }
         [firstWaiting.unitTest runOneTest:firstWaiting.def onThread:self.testThread];
     }
     if (!firstWaiting) {
@@ -133,6 +139,9 @@ NSString * kRZUnitTestNewResults = @"kRZUnitTestNewResults";
     RZUnitTestTask * found =nil;
     for (RZUnitTestTask * task in self.testQueue) {
         if (task.unitTest == test && [task.def[TK_SESS] isEqualToString:session]) {
+            if( self.postRun){
+                self.postRun(task.unitTest, task.def);
+            }
             found = task;
             break;
         }
