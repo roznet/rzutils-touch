@@ -11,7 +11,7 @@ let package = Package(
 
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library( name: "RZUtilsTouch", targets: ["RZUtilsTouch"]),
+        .library( name: "RZUtilsTouch", targets: ["RZUtilsTouch", "RZUtilsTouchSwift"]),
         .library( name: "RZUtilsTestInfra", targets: ["RZUtilsTestInfra"]),
     ],
     dependencies: [
@@ -23,6 +23,13 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "RZUtilsTouch",
+            dependencies: [
+                //"RZUtils"
+                .product(name: "RZUtils", package: "RZUtils"),
+                .product(name: "RZUtilsUniversal", package: "RZUtils")
+            ]),
+        .target(
+            name: "RZUtilsTouchSwift",
             dependencies: [
                 //"RZUtils"
                 .product(name: "RZUtils", package: "RZUtils"),
