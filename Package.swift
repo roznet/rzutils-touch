@@ -29,6 +29,12 @@ let package = Package(
                 .product(name: "RZUtilsUniversal", package: "RZUtils")
             ]),
         .target(
+            name: "RZUtilsTouchHealthKit",
+            dependencies: [
+                //"RZUtils"
+                .product(name: "RZUtils", package: "RZUtils"),
+            ]),
+        .target(
             name: "RZUtilsTouchSwift",
             dependencies: [
                 //"RZUtils"
