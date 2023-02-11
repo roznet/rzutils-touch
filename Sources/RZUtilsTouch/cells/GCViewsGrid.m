@@ -364,7 +364,7 @@
 
         CGRect cellRect = [cellRects[idx] CGRectValue];
 
-        if (holder.config.columnSpan>1) {
+        if (holder.config.columnSpan>1 && _dimension.column != 0) {
             NSUInteger n = holder.config.columnSpan;
             GCCellCoordinate coord = GCCellCoordinateFromIndex(idx, _dimension);
             for (NSUInteger sc = 1; sc < n && coord.column < _dimension.column; sc++) {
@@ -374,7 +374,7 @@
             }
         }
 
-        if (holder.config.rowSpan>1) {
+        if (holder.config.rowSpan>1 && _dimension.column != 0) {
             NSUInteger n = holder.config.rowSpan;
             GCCellCoordinate coord = GCCellCoordinateFromIndex(idx, _dimension);
             for (NSUInteger sc = 1; sc < n && coord.row < _dimension.row; sc++) {
