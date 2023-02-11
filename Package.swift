@@ -6,17 +6,18 @@ import PackageDescription
 let package = Package(
     name: "RZUtilsTouch",
     platforms: [
-        .iOS(.v13)
+        .iOS(.v14)
     ],
 
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library( name: "RZUtilsTouch", targets: ["RZUtilsTouch", "RZUtilsTouchSwift"]),
+        .library( name: "RZUtilsTouchHealthKit", targets: ["RZUtilsTouchHealthKit"]),
         .library( name: "RZUtilsTestInfra", targets: ["RZUtilsTestInfra"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(name: "RZUtils", url: "https://github.com/roznet/rzutils", from: "1.0.0"),
+        .package(name: "RZUtils", url: "https://github.com/roznet/rzutils", from: "1.0.24"),
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
